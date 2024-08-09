@@ -1,0 +1,38 @@
+.intro {
+  --intro-column-gap: 2.4rem;
+  min-height: calc(100vh - var(--header-height));
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--intro-column-gap);
+}
+
+.intro__pseudo-padding {
+  flex: 1;
+}
+
+.intro__pseudo-padding-top {
+  min-height: calc(3rem - var(--intro-column-gap));
+}
+
+.intro__desc {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.intro__contact {
+  justify-content: center;
+  gap: 1rem;
+}
+
+.intro h1 {
+  color: var(--clr-fg);
+}
+
+@media (min-width: 600px) {
+  .intro__pseudo-padding-top {
+    min-height: calc(5rem - var(--intro-column-gap));
+  }
+}
