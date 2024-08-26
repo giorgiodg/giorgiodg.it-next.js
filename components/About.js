@@ -40,9 +40,9 @@ const About = () => {
           Engineer, Team Leader, Scrum Master and Technical Program Manager.
         </p>
         <p>
-          I've built this personal page not only to collect my online references
-          but also to challenge myself with trying new Open Source libraries and
-          tools for Software Development.
+          I&apos;ve built this personal page not only to collect my online
+          references but also to challenge myself with trying new Open Source
+          libraries and tools for Software Development.
         </p>
         <p>This picture is taken in Porto Cesareo, one of my beloved places.</p>
       </div>
