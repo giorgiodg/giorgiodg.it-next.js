@@ -2,6 +2,7 @@
   padding: 2rem;
   margin-top: 3rem;
   text-align: center;
+  font-size: 0.9rem;
 }
 
 .footer__link {
@@ -12,7 +13,7 @@
 
 @media (min-width: 600px) {
   .footer {
-    padding: 3rem 0;
+    padding: 3rem 0.5em;
     margin-top: 4rem;
   }
 }

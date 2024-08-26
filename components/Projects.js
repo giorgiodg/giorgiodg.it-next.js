@@ -1,6 +1,6 @@
 import uniqid from 'uniqid'
 import ProjectCard from './ProjectCard'
-import { projects } from '../data/portfolio'
+import { projects } from '../data/config'
 
 const Projects = () => {
   if (!projects.length) return null

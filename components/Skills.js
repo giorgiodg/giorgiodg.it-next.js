@@ -1,5 +1,5 @@
 import uniqid from 'uniqid'
-import { skills } from '../data/portfolio'
+import { skills } from '../data/config'
 
 const Skills = () => {
   if (!skills.length) return null

@@ -1,4 +1,4 @@
-import { about } from '../data/portfolio'
+import { about } from '../data/config'
 
 const About = () => {
   const { image, birthplace, company } = about
@@ -8,7 +8,7 @@ const About = () => {
       className='section skills animate__animated animate__fadeIn animate__delay-5s'
       id='about'
     >
-      <h2 className='section__title'>About</h2>
+      <h2 className='section__title'>About me</h2>
       <div className='paragraph__list'>
         <p>
           I was born and raised in&nbsp;

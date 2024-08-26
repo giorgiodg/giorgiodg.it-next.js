@@ -3,12 +3,12 @@ import Hyphenated from 'react-hyphen'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import BookIcon from '@material-ui/icons/Book'
-import { intro } from '../data/portfolio'
+import { intro } from '../data/config'
 
 const Intro = () => {
-  const { names, role, company, description, resume, social } = intro
+  const { fullname, role, company, description, headline, resume, social } =
+    intro
 
-  const fullname = names.join(' ')
   const fadeInAnimationClassName =
     'animate__animated animate__fadeIn animate__delay-5s'
 
@@ -34,8 +34,14 @@ const Intro = () => {
                   at <span className='text--strong'>{company}</span>
                 </span>
               )}
-              .
             </h2>
+          )}
+          {headline && (
+            <h5 className='intro__headline animate__animated animate__fadeInUp animate__delay-3s'>
+              {headline.map((item) => (
+                <p key={uniqid()}>{item}</p>
+              ))}
+            </h5>
           )}
         </div>
       )}

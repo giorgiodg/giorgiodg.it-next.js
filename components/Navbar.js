@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react'
 import { ThemeContext } from '../contexts/theme'
-import { header, intro, projects, skills, contact } from '../data/portfolio'
+import { meta, projects, skills, contact } from '../data/config'
 import CloseIcon from '@material-ui/icons/Close'
 import MenuIcon from '@material-ui/icons/Menu'
 import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
@@ -9,9 +9,7 @@ import Brightness2Icon from '@material-ui/icons/Brightness2'
 const Navbar = () => {
   const [showNavList, setShowNavList] = useState(false)
   const { themeName, toggleTheme } = useContext(ThemeContext)
-  const { wordmark } = header
-  const { names } = intro
-  const defaultWordmark = 'About Me'
+  const { siteTitle } = meta
 
   const toggleNavListOverlay = () => {
     showNavList
@@ -42,7 +40,7 @@ const Navbar = () => {
         <li className='nav__list-item nav__scroll-top'>
           <strong>
             <a href='#top' onClick={hideNavListOverlay} className='link'>
-              {wordmark || names.join(' ') || defaultWordmark}
+              {siteTitle}
             </a>
           </strong>
         </li>
@@ -57,7 +55,7 @@ const Navbar = () => {
           </a>
         </li>
 
-        {projects.length && (
+        {/* {projects.length && (
           <li className='nav__list-item'>
             <a
               href='#projects'
@@ -67,7 +65,7 @@ const Navbar = () => {
               Projects
             </a>
           </li>
-        )}
+        )} */}
 
         {skills.length && (
           <li className='nav__list-item'>
@@ -106,9 +104,7 @@ const Navbar = () => {
       <div className='nav__scroll-top'>
         <strong>
           <a href='#top' onClick={hideNavListOverlay} className='link'>
-            {wordmark ||
-              names.map((name) => name[0]).join('') ||
-              defaultWordmark}
+            {siteTitle}
           </a>
         </strong>
       </div>
