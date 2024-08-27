@@ -5,7 +5,7 @@ const meta = {
     'I am Giorgio Delle Grottaglie, and I do Technology stuff. Born and raised in the Heel of Italy, based in Rome.',
   siteTitle: 'giorgiodg.it',
   url: 'https://giorgiodg.it',
-  image: 'lighthouse.jpg',
+  image: 'images/lighthouse.jpg',
 }
 
 const intro = {
