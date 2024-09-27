@@ -10,7 +10,7 @@ const Intro = () => {
     intro
 
   const fadeInAnimationClassName =
-    'animate__animated animate__fadeIn animate__delay-5s'
+    'animate__animated animate__fadeIn animate__delay-3s'
 
   return (
     <div className='intro'>
@@ -19,14 +19,14 @@ const Intro = () => {
       {fullname && (
         <div>
           {fullname && (
-            <h1 className='intro__greeting animate__animated animate__fadeInUp animate__delay-1s'>
+            <h1 className='intro__greeting'>
               Ciao!
               <br />
               I&apos;m {fullname}
             </h1>
           )}
           {role && (
-            <h2 className='intro__role animate__animated animate__fadeInUp animate__delay-3s'>
+            <h2 className='intro__role'>
               {role}
               {company && (
                 <span>
@@ -37,11 +37,11 @@ const Intro = () => {
             </h2>
           )}
           {headline && (
-            <h5 className='intro__headline animate__animated animate__fadeInUp animate__delay-3s'>
+            <h4 className='intro__headline'>
               {headline.map((item) => (
                 <p key={uniqid()}>{item}</p>
               ))}
-            </h5>
+            </h4>
           )}
         </div>
       )}

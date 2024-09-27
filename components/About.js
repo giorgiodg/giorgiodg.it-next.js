@@ -5,7 +5,7 @@ const About = () => {
 
   return (
     <section
-      className='section skills animate__animated animate__fadeIn animate__delay-5s'
+      className='section skills animate__animated animate__fadeIn animate__delay-3s'
       id='about'
     >
       <h2 className='section__title'>About me</h2>

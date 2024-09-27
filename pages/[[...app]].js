@@ -40,7 +40,7 @@ function App() {
         <Skills />
       </main>
 
-      <div className='animate__animated animate__fadeIn animate__delay-5s'>
+      <div className='animate__animated animate__fadeIn animate__delay-3s'>
         <ScrollToTop />
       </div>
 
