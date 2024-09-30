@@ -1,11 +1,12 @@
 import { about } from '../data/config'
+import Image from 'next/image'
 
 const About = () => {
   const { image, birthplace, company } = about
 
   return (
     <section
-      className='section skills animate__animated animate__fadeIn animate__delay-3s'
+      className='section about animate__animated animate__fadeIn animate__delay-3s'
       id='about'
     >
       <h2 className='section__title'>About me</h2>
@@ -45,10 +46,15 @@ const About = () => {
           libraries and tools for Software Development.
         </p>
         <p>This picture is taken in Porto Cesareo, one of my beloved places.</p>
-      </div>
-      <div>
         {image && (
-          <img className='project__thumbnail' src={image.url} alt={image.alt} />
+          <Image
+            className='about__image'
+            alt={image.alt}
+            src={image.url}
+            width={500}
+            height={665}
+            sizes='100vw'
+          />
         )}
       </div>
     </section>

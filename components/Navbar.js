@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react'
 import { ThemeContext } from '../contexts/theme'
-import { meta, projects, skills, contact } from '../data/config'
+import { meta, skills, contact } from '../data/config'
 import CloseIcon from '@material-ui/icons/Close'
 import MenuIcon from '@material-ui/icons/Menu'
 import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'

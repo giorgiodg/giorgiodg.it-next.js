@@ -23,7 +23,7 @@ const intro = {
 
 const about = {
   image: {
-    url: 'images/about.jpg',
+    url: '/images/about.jpg',
     alt: 'A picture of me, in Porto Cesareo',
   },
   birthplace: {
