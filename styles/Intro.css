@@ -19,7 +19,6 @@
 
 .intro__desc {
   font-size: 1.2rem;
-  text-align: left;
 }
 
 .intro__contact {
@@ -29,11 +28,6 @@
 
 .intro h1 {
   color: var(--clr-fg);
-}
-
-.intro h5 {
-  color: var(--clr-fg);
-  font-weight: normal;
 }
 
 @media (min-width: 600px) {

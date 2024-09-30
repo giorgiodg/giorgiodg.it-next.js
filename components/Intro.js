@@ -37,11 +37,11 @@ const Intro = () => {
             </h2>
           )}
           {headline && (
-            <h4 className='intro__headline'>
+            <div className='intro__headline'>
               {headline.map((item) => (
                 <p key={uniqid()}>{item}</p>
               ))}
-            </h4>
+            </div>
           )}
         </div>
       )}
