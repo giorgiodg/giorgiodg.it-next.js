@@ -26,9 +26,8 @@ const About = () => {
         </p>
         <p>
           I am a Technology professional with a significant experience in
-          Software Engineering and Business Agility. My last experience was as a
-          Senior Engineer Manager at Expedia Group.<br />
-          In the past I had the chance to cover different roles such as Software
+          Software Engineering and Business Agility.<br />
+          In the past I had the chance to cover different roles such as Senior Engineering Manager, Software
           Engineer, Team Leader, Scrum Master and Technical Program Manager.
         </p>
         <p>
