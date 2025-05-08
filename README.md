@@ -9,7 +9,7 @@ I got inspired by this minimal portfolio template called [leanfolio](https://git
 
 - Next.js
 - ReactJS
-- Netlify [![Netlify Status](https://api.netlify.com/api/v1/badges/4a7eed75-ae18-43e0-abfe-72c262b0e1a6/deploy-status)](https://app.netlify.com/sites/giorgiodg/deploys)
+- Netlify [![Netlify Status](https://api.netlify.com/api/v1/badges/1fb0e84b-eb8f-422a-9b36-74efcffe32ab/deploy-status)](https://app.netlify.com/sites/giorgiodg-next/deploys)
 
 ## Getting Started
 
