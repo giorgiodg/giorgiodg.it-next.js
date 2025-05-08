@@ -1,8 +1,8 @@
 import uniqid from 'uniqid'
 import Hyphenated from 'react-hyphen'
-import GitHubIcon from '@material-ui/icons/GitHub'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import BookIcon from '@material-ui/icons/Book'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import BookIcon from '@mui/icons-material/Book'
 import { intro } from '../data/config'
 
 const Intro = () => {

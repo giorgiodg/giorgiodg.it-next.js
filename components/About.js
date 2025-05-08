@@ -1,8 +1,9 @@
+import { relative } from 'path'
 import { about } from '../data/config'
 import Image from 'next/image'
 
 const About = () => {
-  const { image, birthplace, company } = about
+  const { image, birthplace } = about
 
   return (
     <section
@@ -26,9 +27,11 @@ const About = () => {
         </p>
         <p>
           I am a Technology professional with a significant experience in
-          Software Engineering and Business Agility.<br />
-          In the past I had the chance to cover different roles such as Senior Engineering Manager, Software
-          Engineer, Team Leader, Scrum Master and Technical Program Manager.
+          Software Engineering and Business Agility.
+          <br />
+          In the past I had the chance to cover different roles such as Senior
+          Engineering Manager, Software Engineer, Team Leader, Scrum Master and
+          Technical Program Manager.
         </p>
         <p>
           I&apos;ve built this personal page not only to collect my online
