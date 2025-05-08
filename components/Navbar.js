@@ -5,6 +5,7 @@ import CloseIcon from '@material-ui/icons/Close'
 import MenuIcon from '@material-ui/icons/Menu'
 import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
 import Brightness2Icon from '@material-ui/icons/Brightness2'
+import Link from 'next/link'
 
 const Navbar = () => {
   const [showNavList, setShowNavList] = useState(false)
@@ -39,20 +40,20 @@ const Navbar = () => {
       >
         <li className='nav__list-item nav__scroll-top'>
           <strong>
-            <a href='#top' onClick={hideNavListOverlay} className='link'>
+            <Link href='#top' onClick={hideNavListOverlay} className='link'>
               {siteTitle}
-            </a>
+            </Link>
           </strong>
         </li>
 
         <li className='nav__list-item'>
-          <a
+          <Link
             href='#about'
             onClick={hideNavListOverlay}
             className='link link--nav'
           >
             About
-          </a>
+          </Link>
         </li>
 
         {/* {projects.length && (
@@ -69,13 +70,13 @@ const Navbar = () => {
 
         {skills.length && (
           <li className='nav__list-item'>
-            <a
+            <Link
               href='#skills'
               onClick={hideNavListOverlay}
               className='link link--nav'
             >
               Skills
-            </a>
+            </Link>
           </li>
         )}
 
@@ -103,9 +104,9 @@ const Navbar = () => {
 
       <div className='nav__scroll-top'>
         <strong>
-          <a href='#top' onClick={hideNavListOverlay} className='link'>
+          <Link href='#top' onClick={hideNavListOverlay} className='link'>
             {siteTitle}
-          </a>
+          </Link>
         </strong>
       </div>
 
