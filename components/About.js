@@ -1,4 +1,3 @@
-import { relative } from 'path'
 import { about } from '../data/config'
 import Image from 'next/image'
 
