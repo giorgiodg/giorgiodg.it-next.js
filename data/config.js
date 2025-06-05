@@ -31,8 +31,8 @@ const about = {
     url: 'https://en.wikipedia.org/wiki/Mesagne',
   },
   company: {
-    name: 'Expedia Group',
-    url: 'https://www.expediagroup.com',
+    name: '',
+    url: '',
   },
 }
 
