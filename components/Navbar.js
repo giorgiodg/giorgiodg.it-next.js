@@ -5,6 +5,7 @@ import CloseIcon from '@mui/icons-material/Close'
 import MenuIcon from '@mui/icons-material/Menu'
 import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded'
 import Brightness2Icon from '@mui/icons-material/Brightness2'
+import useBetterlyticsEvent from '../hooks/useBetterlyticsEvent'
 import Link from 'next/link'
 
 const Navbar = () => {
@@ -24,6 +25,8 @@ const Navbar = () => {
     setShowNavList(false)
   }
 
+  const trackEvent = useBetterlyticsEvent()
+
   useEffect(() => {
     const hideNavListOverlayIfScreenIsTooBig = () =>
       window.innerWidth > 600 ? hideNavListOverlay() : null
@@ -40,7 +43,14 @@ const Navbar = () => {
       >
         <li className='nav__list-item nav__scroll-top'>
           <strong>
-            <Link href='#top' onClick={hideNavListOverlay} className='link'>
+            <Link
+              href='#top'
+              onClick={() => {
+                hideNavListOverlay()
+                trackEvent('nav-click', { buttonText: 'Home' })
+              }}
+              className='link'
+            >
               {siteTitle}
             </Link>
           </strong>
@@ -49,7 +59,10 @@ const Navbar = () => {
         <li className='nav__list-item'>
           <Link
             href='#about'
-            onClick={hideNavListOverlay}
+            onClick={() => {
+              hideNavListOverlay()
+              trackEvent('nav-click', { buttonText: 'About' })
+            }}
             className='link link--nav'
           >
             About
@@ -72,23 +85,14 @@ const Navbar = () => {
           <li className='nav__list-item'>
             <Link
               href='#skills'
-              onClick={hideNavListOverlay}
+              onClick={() => {
+                hideNavListOverlay()
+                trackEvent('nav-click', { buttonText: 'Skills' })
+              }}
               className='link link--nav'
             >
               Skills
             </Link>
-          </li>
-        )}
-
-        {contact.email && (
-          <li className='nav__list-item'>
-            <a
-              href='#contact'
-              onClick={hideNavListOverlay}
-              className='link link--nav'
-            >
-              Contact
-            </a>
           </li>
         )}
       </ul>

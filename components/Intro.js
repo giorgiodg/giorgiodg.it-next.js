@@ -3,6 +3,7 @@ import Hyphenated from 'react-hyphen'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import BookIcon from '@mui/icons-material/Book'
+import useBetterlyticsEvent from '../hooks/useBetterlyticsEvent'
 import { intro } from '../data/config'
 
 const Intro = () => {
@@ -11,6 +12,8 @@ const Intro = () => {
 
   const fadeInAnimationClassName =
     'animate__animated animate__fadeIn animate__delay-3s'
+
+  const trackEvent = useBetterlyticsEvent()
 
   return (
     <div className='intro'>
@@ -82,8 +85,11 @@ const Intro = () => {
                   rel='noreferrer'
                   aria-label='linkedin'
                   className='link link--icon'
+                  onClick={() =>
+                    trackEvent('cta-click', { buttonText: 'LinkedIn' })
+                  }
                 >
-                  <LinkedInIcon />
+                  <LinkedInIcon fontSize='large' />
                 </a>
               )}
 
@@ -94,8 +100,11 @@ const Intro = () => {
                   rel='noreferrer'
                   aria-label='github'
                   className='link link--icon'
+                  onClick={() =>
+                    trackEvent('cta-click', { buttonText: 'GitHub' })
+                  }
                 >
-                  <GitHubIcon />
+                  <GitHubIcon fontSize='large' />
                 </a>
               )}
 
@@ -106,8 +115,11 @@ const Intro = () => {
                   rel='noreferrer'
                   aria-label='medium'
                   className='link link--icon'
+                  onClick={() =>
+                    trackEvent('cta-click', { buttonText: 'Medium' })
+                  }
                 >
-                  <BookIcon />
+                  <BookIcon fontSize='large' />
                 </a>
               )}
             </>

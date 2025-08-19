@@ -32,18 +32,15 @@ function App() {
       style={{ pointerEvents: 'none' }}
     >
       <Header />
-
       <main className='container'>
         <Intro />
         <About />
         <Projects />
         <Skills />
       </main>
-
       <div className='animate__animated animate__fadeIn animate__delay-3s'>
         <ScrollToTop />
       </div>
-
       <Footer />
     </div>
   )
