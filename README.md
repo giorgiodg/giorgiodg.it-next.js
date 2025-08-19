@@ -41,4 +41,4 @@ yarn dev
 
 ## License
 
-[MIT](LICENSE)
+[MIT] (LICENSE)

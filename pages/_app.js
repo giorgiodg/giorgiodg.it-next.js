@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import { ThemeProvider } from '../contexts/theme'
 import { meta } from '../data/config'
+import { useEffect } from 'react'
+import betterlytics from '@betterlytics/tracker'
 import '../styles/index.css'
 import '../styles/About.css'
 import '../styles/App.css'
@@ -16,6 +18,9 @@ import '../styles/Footer.css'
 import 'animate.css'
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    betterlytics.init('giorgiodg-mdx504uk')
+  }, [])
   return (
     <>
       <Head>
