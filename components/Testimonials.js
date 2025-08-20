@@ -4,9 +4,8 @@ import { testimonials, intro } from '../data/config'
 import useBetterlyticsEvent from '../hooks/useBetterlyticsEvent'
 
 const Testimonials = () => {
-  if (!testimonials.length) return null
-
   const trackEvent = useBetterlyticsEvent()
+  if (!testimonials.length) return null
 
   return (
     <section
