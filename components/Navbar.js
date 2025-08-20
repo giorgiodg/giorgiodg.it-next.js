@@ -47,7 +47,10 @@ const Navbar = () => {
               href='#top'
               onClick={() => {
                 hideNavListOverlay()
-                trackEvent('nav-click', { buttonText: 'Home' })
+                trackEvent('nav-click', {
+                  buttonText: 'Home',
+                  source: 'NavBar',
+                })
               }}
               className='link'
             >
@@ -60,7 +63,10 @@ const Navbar = () => {
             href='#about'
             onClick={() => {
               hideNavListOverlay()
-              trackEvent('nav-click', { buttonText: 'About' })
+              trackEvent('nav-click', {
+                buttonText: 'About',
+                source: 'NavBar',
+              })
             }}
             className='link link--nav'
           >
@@ -73,7 +79,10 @@ const Navbar = () => {
               href='#skills'
               onClick={() => {
                 hideNavListOverlay()
-                trackEvent('nav-click', { buttonText: 'Skills' })
+                trackEvent('nav-click', {
+                  buttonText: 'Skills',
+                  source: 'NavBar',
+                })
               }}
               className='link link--nav'
             >

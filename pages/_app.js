@@ -21,10 +21,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     var host = window.location.hostname
     if (host != 'localhost') {
-      console.log('not localhost')
       betterlytics.init('giorgiodg-mdx504uk')
-    } else {
-      console.log('localhost ')
     }
   }, [])
   return (
