@@ -36,6 +36,35 @@ const about = {
   },
 }
 
+const testimonials = [
+  {
+    thumbnail: 'images/placeholder-image.jpeg',
+    name: 'Bill T.',
+    role: 'Director',
+    description: [
+      "Giorgio and I collaborated and coordinated on developer support operations within Expedia's Developer Experience org, where he led our developer support teams and I led several devops squads.",
+      'Giorgio was an exceptional partner and a tremendous asset to our organization, which was being hamstrung by a great deal of technical debt and a heavy developer-support burden. [...]',
+    ],
+  },
+  {
+    thumbnail: 'images/placeholder-image.jpeg',
+    name: 'Chris R.',
+    role: 'Engineering Leader',
+    description: [
+      'I had the pleasure of working closely with Giorgio during the period that we were both part of the Developer Experience organisation at Expedia Group.',
+      'His background as both an engineer and a scrum master has armed him with a number of qualities that make him a successful leader - he is empathetic, customer-centric and has a strong analytical and technical mindset. Most of all, Giorgio possesses a temperament that makes him extremely enjoyable to work with, and I hope that we get the chance to work together again in the future! [...]',
+    ],
+  },
+  {
+    name: 'Iqbal M.',
+    role: 'Lead SRE',
+    description: [
+      'I had the privilege of working with Giorgio in the Developer Support team within the EGDx department. As the manager overseeing the compute platform of RCP, Giorgio displayed exceptional leadership, skillfully managing resources across different geographies.',
+      'He was always approachable for guidance and trusted me with opportunities like being part of the hiring team, which greatly contributed to my professional growth. [...]',
+    ],
+  },
+]
+
 const projects = [
   // projects can be added and removed
   // if the array is left empty, the "Projects" section won't render
@@ -57,18 +86,22 @@ const skills = [
   // if the array is left empty, the "Skills" section won't render
   'Multi-Cultural Team Leadership',
   'Stakeholder Management',
+  'Business Agility',
+  'Agile Practices',
+  'Coaching & Mentorship',
+  'JavaScript',
+  'NodeJS',
+  'ReactJS',
+  'Next.js',
+  'TypeScript',
+  'PHP',
+  'MySQL',
   'DevOps',
-  'CI/CD',
   'AWS',
   'Kubernetes',
-  'Business Agility',
-  'Mentorship',
-  'Scrum',
-  'Kanban',
+  'CI/CD',
   'Python',
   'Bash',
-  'JavaScript',
-  'WordPress',
 ]
 
 const contact = {
@@ -77,4 +110,4 @@ const contact = {
   // email: 'johndoe@email.com',
 }
 
-export { meta, intro, about, projects, skills, contact }
+export { meta, intro, about, testimonials, skills, contact, projects }

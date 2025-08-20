@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react'
 import { ThemeContext } from '../contexts/theme'
-import { meta, skills, contact } from '../data/config'
+import { meta, skills, testimonials, contact } from '../data/config'
 import CloseIcon from '@mui/icons-material/Close'
 import MenuIcon from '@mui/icons-material/Menu'
 import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded'
@@ -47,7 +47,10 @@ const Navbar = () => {
               href='#top'
               onClick={() => {
                 hideNavListOverlay()
-                trackEvent('nav-click', { buttonText: 'Home' })
+                trackEvent('nav-click', {
+                  buttonText: 'Home',
+                  source: 'NavBar',
+                })
               }}
               className='link'
             >
@@ -55,43 +58,49 @@ const Navbar = () => {
             </Link>
           </strong>
         </li>
-
         <li className='nav__list-item'>
           <Link
             href='#about'
             onClick={() => {
               hideNavListOverlay()
-              trackEvent('nav-click', { buttonText: 'About' })
+              trackEvent('nav-click', {
+                buttonText: 'About',
+                source: 'NavBar',
+              })
             }}
             className='link link--nav'
           >
             About
           </Link>
         </li>
-
-        {/* {projects.length && (
-          <li className='nav__list-item'>
-            <a
-              href='#projects'
-              onClick={hideNavListOverlay}
-              className='link link--nav'
-            >
-              Projects
-            </a>
-          </li>
-        )} */}
-
         {skills.length && (
           <li className='nav__list-item'>
             <Link
               href='#skills'
               onClick={() => {
                 hideNavListOverlay()
-                trackEvent('nav-click', { buttonText: 'Skills' })
+                trackEvent('nav-click', {
+                  buttonText: 'Skills',
+                  source: 'NavBar',
+                })
               }}
               className='link link--nav'
             >
               Skills
+            </Link>
+          </li>
+        )}
+        {testimonials.length && (
+          <li className='nav__list-item'>
+            <Link
+              href='#testimonials'
+              onClick={() => {
+                hideNavListOverlay()
+                trackEvent('nav-click', { buttonText: 'Testimonials' })
+              }}
+              className='link link--nav'
+            >
+              Testimonials
             </Link>
           </li>
         )}

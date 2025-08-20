@@ -1,0 +1,8 @@
+.CookieConsent {
+  background: var(--clr-primary) !important;
+}
+
+.CookieConsent button {
+  color: var(--clr-bg) !important;
+  background: var(--clr-fg) !important;
+}

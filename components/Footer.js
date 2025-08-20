@@ -9,15 +9,6 @@ const Footer = () => (
     >
       GitHub profile
     </a>
-    &nbsp;- Inspired by&nbsp;
-    <a
-      href='https://github.com/magic-ike/leanfolio'
-      target='_blank'
-      rel='noreferrer'
-      className='link'
-    >
-      leanfolio
-    </a>
   </footer>
 )
 
