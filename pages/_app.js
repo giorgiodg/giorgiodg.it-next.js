@@ -9,8 +9,8 @@ import '../styles/App.css'
 import '../styles/Header.css'
 import '../styles/Navbar.css'
 import '../styles/Intro.css'
-import '../styles/Projects.css'
-import '../styles/ProjectCard.css'
+import '../styles/Testimonials.css'
+import '../styles/TestimonialCard.css'
 import '../styles/Skills.css'
 import '../styles/Contact.css'
 import '../styles/ScrollToTop.css'
@@ -19,7 +19,13 @@ import 'animate.css'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    betterlytics.init('giorgiodg-mdx504uk')
+    var host = window.location.hostname
+    if (host != 'localhost') {
+      console.log('not localhost')
+      betterlytics.init('giorgiodg-mdx504uk')
+    } else {
+      console.log('localhost')
+    }
   }, [])
   return (
     <>

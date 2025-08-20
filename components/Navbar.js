@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react'
 import { ThemeContext } from '../contexts/theme'
-import { meta, skills, contact } from '../data/config'
+import { meta, skills, testimonials, contact } from '../data/config'
 import CloseIcon from '@mui/icons-material/Close'
 import MenuIcon from '@mui/icons-material/Menu'
 import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded'
@@ -55,7 +55,6 @@ const Navbar = () => {
             </Link>
           </strong>
         </li>
-
         <li className='nav__list-item'>
           <Link
             href='#about'
@@ -68,19 +67,6 @@ const Navbar = () => {
             About
           </Link>
         </li>
-
-        {/* {projects.length && (
-          <li className='nav__list-item'>
-            <a
-              href='#projects'
-              onClick={hideNavListOverlay}
-              className='link link--nav'
-            >
-              Projects
-            </a>
-          </li>
-        )} */}
-
         {skills.length && (
           <li className='nav__list-item'>
             <Link
@@ -92,6 +78,20 @@ const Navbar = () => {
               className='link link--nav'
             >
               Skills
+            </Link>
+          </li>
+        )}
+        {testimonials.length && (
+          <li className='nav__list-item'>
+            <Link
+              href='#testimonials'
+              onClick={() => {
+                hideNavListOverlay()
+                trackEvent('nav-click', { buttonText: 'Testimonials' })
+              }}
+              className='link link--nav'
+            >
+              Testimonials
             </Link>
           </li>
         )}

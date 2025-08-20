@@ -5,6 +5,7 @@ import Intro from '../components/Intro'
 import About from '../components/About'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
+import Testimonials from '../components/Testimonials'
 import ScrollToTop from '../components/ScrollToTop'
 import Footer from '../components/Footer'
 
@@ -37,6 +38,7 @@ function App() {
         <About />
         <Projects />
         <Skills />
+        <Testimonials />
       </main>
       <div className='animate__animated animate__fadeIn animate__delay-3s'>
         <ScrollToTop />
