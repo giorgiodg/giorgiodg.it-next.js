@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
       console.log('not localhost')
       betterlytics.init('giorgiodg-mdx504uk')
     } else {
-      console.log('localhost')
+      console.log('localhost ')
     }
   }, [])
   return (
