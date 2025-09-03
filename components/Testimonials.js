@@ -8,10 +8,7 @@ const Testimonials = () => {
   if (!testimonials.length) return null
 
   return (
-    <section
-      className='section testimonials animate__animated animate__fadeIn animate__delay-3s'
-      id='testimonials'
-    >
+    <section className='section testimonials' id='testimonials'>
       <h2 className='section__title'>Testimonials</h2>
       <div className='testimonials__column'>
         {testimonials.map((testimonial) => (

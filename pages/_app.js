@@ -13,7 +13,6 @@ import '../styles/Testimonials.css'
 import '../styles/TestimonialCard.css'
 import '../styles/Skills.css'
 import '../styles/Contact.css'
-import '../styles/ScrollToTop.css'
 import '../styles/Footer.css'
 import 'animate.css'
 

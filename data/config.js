@@ -9,8 +9,6 @@ const meta = {
 }
 
 const intro = {
-  // each of these properties is optional - they can be left empty or deleted
-  // each element in the `description` array will be treated as a separate paragraph
   fullname: 'Giorgio Delle Grottaglie',
   role: 'I do Technology stuff',
   headline: ['Born and raised in the Heel of Italy', 'Based in Rome'],
@@ -82,8 +80,6 @@ const projects = [
 ]
 
 const skills = [
-  // skills can be added or removed
-  // if the array is left empty, the "Skills" section won't render
   'Multi-Cultural Team Leadership',
   'Stakeholder Management',
   'Business Agility',

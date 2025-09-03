@@ -5,11 +5,8 @@ const About = () => {
   const { image, birthplace } = about
 
   return (
-    <section
-      className='section about animate__animated animate__fadeIn animate__delay-3s'
-      id='about'
-    >
-      <h2 className='section__title'>About me</h2>
+    <section className='section about' id='about'>
+      <h2 className='section__title'>About</h2>
       <div className='paragraph__list'>
         <p>
           I was born and raised in&nbsp;
