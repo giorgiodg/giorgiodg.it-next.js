@@ -11,7 +11,6 @@ const meta = {
 const intro = {
   fullname: 'Giorgio Delle Grottaglie',
   role: 'I do Technology stuff',
-  headline: ['Born and raised in the Heel of Italy', 'Based in Rome'],
   social: {
     linkedin: 'https://www.linkedin.com/in/giorgiodellegrottaglie/',
     github: 'https://github.com/giorgiodg',
@@ -23,14 +22,6 @@ const about = {
   image: {
     url: '/images/about.jpg',
     alt: 'A picture of me, in Porto Cesareo',
-  },
-  birthplace: {
-    name: 'Mesagne',
-    url: 'https://en.wikipedia.org/wiki/Mesagne',
-  },
-  company: {
-    name: '',
-    url: '',
   },
 }
 

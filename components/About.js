@@ -2,7 +2,7 @@ import { about } from '../data/config'
 import Image from 'next/image'
 
 const About = () => {
-  const { image, birthplace } = about
+  const { image } = about
 
   return (
     <section className='section about' id='about'>
@@ -11,15 +11,23 @@ const About = () => {
         <p>
           I was born and raised in&nbsp;
           <a
-            href={birthplace.url}
+            href='https://en.wikipedia.org/wiki/Mesagne'
             target='_blank'
             rel='noreferrer'
             className='link'
           >
-            {birthplace.name}
+            Mesagne
           </a>
-          , a nice sunny city in the <em>Heel of Italy</em>, and I am currently
-          living in Rome.
+          , a nice sunny city in the{' '}
+          <a
+            href='https://en.wikipedia.org/wiki/Terra_di_Otranto'
+            target='_blank'
+            rel='noreferrer'
+            className='link'
+          >
+            Heel of Italy
+          </a>
+          , and I am currently living in Rome.
         </p>
         <p>
           I am a Technology professional with a significant experience in
