@@ -11,7 +11,7 @@ const Intro = () => {
     intro
 
   const fadeInAnimationClassName =
-    'animate__animated animate__fadeIn animate__delay-3s'
+    'animate__animated animate__fadeIn animate__delay-1s'
 
   const trackEvent = useBetterlyticsEvent()
 
