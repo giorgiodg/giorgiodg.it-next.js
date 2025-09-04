@@ -125,6 +125,7 @@ const Navbar = () => {
         </div>
 
         <button
+          id='toggle-theme'
           type='button'
           onClick={toggleTheme}
           aria-label='toggle theme'
