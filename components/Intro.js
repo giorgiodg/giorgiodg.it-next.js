@@ -86,7 +86,10 @@ const Intro = () => {
                   aria-label='linkedin'
                   className='link link--icon'
                   onClick={() =>
-                    trackEvent('cta-click', { buttonText: 'LinkedIn' })
+                    trackEvent('cta-click', {
+                      buttonText: 'LinkedIn',
+                      source: 'Intro',
+                    })
                   }
                 >
                   <LinkedInIcon fontSize='large' />
@@ -101,7 +104,10 @@ const Intro = () => {
                   aria-label='github'
                   className='link link--icon'
                   onClick={() =>
-                    trackEvent('cta-click', { buttonText: 'GitHub' })
+                    trackEvent('cta-click', {
+                      buttonText: 'GitHub',
+                      source: 'Intro',
+                    })
                   }
                 >
                   <GitHubIcon fontSize='large' />
@@ -116,7 +122,10 @@ const Intro = () => {
                   aria-label='medium'
                   className='link link--icon'
                   onClick={() =>
-                    trackEvent('cta-click', { buttonText: 'Medium' })
+                    trackEvent('cta-click', {
+                      buttonText: 'Medium',
+                      source: 'Intro',
+                    })
                   }
                 >
                   <BookIcon fontSize='large' />

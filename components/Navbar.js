@@ -97,7 +97,10 @@ const Navbar = () => {
                 href='/testimonials'
                 onClick={() => {
                   hideNavListOverlay()
-                  trackEvent('nav-click', { buttonText: 'Testimonials' })
+                  trackEvent('nav-click', {
+                    buttonText: 'Testimonials',
+                    source: 'NavBar',
+                  })
                 }}
                 className='link link--nav'
               >

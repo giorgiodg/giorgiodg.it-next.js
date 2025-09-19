@@ -1,0 +1,10 @@
+.cv {
+  color: var(--clr-fg);
+}
+
+.cv__small {
+  font-size: 1.1rem;
+}
+.cv__large {
+  font-size: 1.4rem;
+}

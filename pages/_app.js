@@ -14,6 +14,7 @@ import '../styles/TestimonialCard.css'
 import '../styles/Skills.css'
 import '../styles/Contact.css'
 import '../styles/Footer.css'
+import '../styles/Cv.css'
 import 'animate.css'
 
 function MyApp({ Component, pageProps }) {
