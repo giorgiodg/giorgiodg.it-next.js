@@ -30,8 +30,9 @@ const Cv = () => {
           from colleagues I worked with.
         </div>
         <div className='cv__small'>
-          If you've read this far, then I'd like to remind you that if you'd
-          like to learn more about my professional profile, here you can find my{' '}
+          If you&apos;ve read this far, then I&apos;d like to remind you that if
+          you want to learn more about my professional profile, here you can
+          find my{' '}
           <a
             href={social.linkedin}
             target='_blank'
